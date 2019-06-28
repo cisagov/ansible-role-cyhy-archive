@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "iam_user" {
-  source = "github.com/cisagov/molecule-packer-travisci-iam-user-tf-moduleXS"
+  source = "github.com/cisagov/molecule-packer-travisci-iam-user-tf-module"
 
   ssm_parameters = ["/github/oauth_token"]
   user_name      = "test-ansible-role-cyhy-archive"
