@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Shane Frasier
-  description: Install the cyhy_archive.sh script from jsf9k/cyhy-core.
+  description: Install the cyhy_archive.sh script from cisagov/cyhy-core.
   company: CISA Cyber Assessments
   galaxy_tags:
     - cyhy

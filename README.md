@@ -5,7 +5,7 @@
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-cyhy-archive.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-cyhy-archive/context:python)
 
 An Ansible role for installing the `cyhy_archive.sh` script from
-[jsf9k/cyhy-core](https://github.com/jsf9k/cyhy-core).
+[cisagov/cyhy-core](https://github.com/cisagov/cyhy-core).
 
 ## Requirements ##
 
@@ -17,7 +17,7 @@ None.
 
 ## Dependencies ##
 
-None.
+* [cisagov/ansible-role-cyhy-core](https://github.com/cisagov/ansible-role-cyhy-core)
 
 ## Example Playbook ##
 
