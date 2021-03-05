@@ -2,12 +2,13 @@
 # tasks file for cyhy_archive
 
 - name: Create the /var/cyhy/scripts directory
-  file:
+  ansible.builtin.file:
+    mode: 0755
     path: /var/cyhy/scripts
     state: directory
 
 - name: Copy cyhy_archive.sh from the cyhy-core installation
-  copy:
+  ansible.builtin.copy:
     src: /var/local/cyhy/core/var/cyhy_archive.sh
     dest: /var/cyhy/scripts/cyhy_archive.sh
     mode: 0755
