@@ -1,17 +1,26 @@
 ---
 galaxy_info:
   author: Shane Frasier
-  description: Install the cyhy_archive.sh script from jsf9k/cyhy-core.
-  company: CISA NCATS
-  license: CC0
-  min_ansible_version: 2.0
-  platforms:
-    - name: Debian
-      versions:
-        - stretch
+  description: Install the cyhy_archive.sh script from cisagov/cyhy-core.
+  company: CISA Cyber Assessments
   galaxy_tags:
     - cyhy
     - archive
+  license: CC0
+  # With the release of version 2.10, Ansible finally correctly
+  # identifies Kali Linux as being the Kali distribution of the Debian
+  # OS family.  This simplifies a lot of things for roles that support
+  # Kali Linux, so it makes sense to force the installation of Ansible
+  # 2.10 or newer.
+  min_ansible_version: 2.10
+  platforms:
+    - name: Amazon
+      versions:
+        - 2
+    - name: Debian
+      versions:
+        - stretch
+  role_name: cyhy_archive
 
 dependencies:
   - src: https://github.com/cisagov/ansible-role-cyhy-core
