@@ -7,6 +7,35 @@
 An Ansible role for installing the `cyhy_archive.sh` script from
 [cisagov/cyhy-core](https://github.com/cisagov/cyhy-core).
 
+## Pre-requisites ##
+
+In order to execute the Molecule tests for this Ansible role in GitHub
+Actions, a build user must exist in AWS. The accompanying Terraform
+code will create the user with the appropriate name and
+permissions. This only needs to be run once per project, per AWS
+account. This user can also be used to run the Molecule tests on your
+local machine.
+
+Before the build user can be created, the following profile must exist in
+your AWS credentials file:
+
+- `cool-terraform-backend`
+
+The easiest way to set up that profile is to use our
+[`aws-profile-sync`](https://github.com/cisagov/aws-profile-sync)
+utility. Follow the usage instructions in that repository before
+continuing with the next steps. Note that you will need to know where
+your team stores their remote profile data in order to use
+[`aws-profile-sync`](https://github.com/cisagov/aws-profile-sync).
+
+To create the build user, follow these instructions:
+
+```console
+cd terraform
+terraform init --upgrade=true
+terraform apply
+```
+
 ## Requirements ##
 
 None.
@@ -17,7 +46,7 @@ None.
 
 ## Dependencies ##
 
-* [cisagov/ansible-role-cyhy-core](https://github.com/cisagov/ansible-role-cyhy-core)
+- [cisagov/ansible-role-cyhy-core](https://github.com/cisagov/ansible-role-cyhy-core)
 
 ## Example Playbook ##
 
@@ -51,4 +80,4 @@ with this waiver of copyright interest.
 
 ## Author Information ##
 
-Shane Frasier - <jeremy.fraiser@trio.dhs.gov>
+Shane Frasier - <jeremy.frasier@trio.dhs.gov>
