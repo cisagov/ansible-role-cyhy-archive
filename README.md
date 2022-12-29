@@ -1,8 +1,7 @@
 # ansible-role-cyhy-archive #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-cyhy-archive/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-cyhy-archive/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-cyhy-archive.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-cyhy-archive/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-cyhy-archive.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-cyhy-archive/context:python)
+[![CodeQL](https://github.com/cisagov/ansible-role-cyhy-archive/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-cyhy-archive/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing the `cyhy_archive.sh` script from
 [cisagov/cyhy-core](https://github.com/cisagov/cyhy-core).
@@ -66,8 +65,10 @@ Here's how to use it in a playbook:
 - hosts: all
   become: yes
   become_method: sudo
-  roles:
-    - cyhy_archive
+  tasks:
+    - name: Install cisagov/cyhy-archive
+      ansible.builtin.include_role:
+        name: cyhy_archive
 ```
 
 ## Contributing ##
