@@ -1,8 +1,11 @@
 ---
+dependencies:
+  - src: https://github.com/cisagov/ansible-role-cyhy-core
+    name: cyhy_core
 galaxy_info:
   author: Shane Frasier
-  description: Install the cyhy_archive.sh script from cisagov/cyhy-core.
   company: CISA Cyber Assessments
+  description: Install the cyhy_archive.sh script from cisagov/cyhy-core.
   galaxy_tags:
     - cyhy
     - archive
@@ -26,7 +29,3 @@ galaxy_info:
       versions:
         - bionic
   role_name: cyhy_archive
-
-dependencies:
-  - src: https://github.com/cisagov/ansible-role-cyhy-core
-    name: cyhy_core
