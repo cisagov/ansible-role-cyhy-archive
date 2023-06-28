@@ -1,4 +1,10 @@
 ---
+- name: Install cisagov/cyhy-core
+  ansible.builtin.include_role:
+    name: cyhy_core
+  vars:
+    cyhy_core_maxmind_license_key: "{{ cyhy_archive_maxmind_license_key }}"
+
 - name: Create the /var/cyhy/scripts directory
   ansible.builtin.file:
     group: "{{ cyhy_archive_file_owner_group | default(omit) }}"
