@@ -1,7 +1,5 @@
 ---
-dependencies:
-  - src: https://github.com/cisagov/ansible-role-cyhy-core
-    name: cyhy_core
+dependencies: []
 galaxy_info:
   author: Shane Frasier
   company: CISA Cyber Assessments
@@ -24,7 +22,4 @@ galaxy_info:
     - name: Debian
       versions:
         - buster
-    - name: Ubuntu
-      versions:
-        - bionic
   role_name: cyhy_archive
