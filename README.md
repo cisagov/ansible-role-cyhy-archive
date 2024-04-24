@@ -54,6 +54,28 @@ None.
 
 - [cisagov/ansible-role-cyhy-core](https://github.com/cisagov/ansible-role-cyhy-core)
 
+## Installation ##
+
+This role can be installed via the command:
+
+```console
+ansible-galaxy install --role-file path/to/requirements.yml
+```
+
+where `requirements.yml` looks like:
+
+```yaml
+---
+- name: cyhy_archive
+  src: https://github.com/cisagov/ansible-role-cyhy-archive
+```
+
+and may contain other roles as well.
+
+For more information about installing Ansible roles via a YAML file,
+please see [the `ansible-galaxy`
+documentation](https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#installing-multiple-roles-from-a-file).
+
 ## Example Playbook ##
 
 Here's how to use it in a playbook:
