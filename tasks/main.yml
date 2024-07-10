@@ -3,6 +3,8 @@
   ansible.builtin.include_role:
     name: cyhy_core
   vars:
+    cyhy_core_install_geoipupdate: "{{ cyhy_archive_install_geoipupdate }}"
+    cyhy_core_maxmind_account_id: "{{ cyhy_archive_maxmind_account_id }}"
     cyhy_core_maxmind_license_key: "{{ cyhy_archive_maxmind_license_key }}"
 
 - name: Create the /var/cyhy/scripts directory
