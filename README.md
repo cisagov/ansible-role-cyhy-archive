@@ -1,6 +1,7 @@
 # ansible-role-cyhy-archive #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-cyhy-archive/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-cyhy-archive/actions)
+[![License](https://img.shields.io/github/license/cisagov/ansible-role-cyhy-archive)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-cyhy-archive/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-cyhy-archive/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing the `cyhy_archive.sh` script from
