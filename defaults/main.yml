@@ -4,4 +4,4 @@
 cyhy_archive_install_geoipupdate: false
 
 # The version of cisagov/cyhy-core to use; must be a valid git reference
-cyhy_archive_cyhy_core_version: v1.1.2
+cyhy_archive_cyhy_core_version: v1.1.14

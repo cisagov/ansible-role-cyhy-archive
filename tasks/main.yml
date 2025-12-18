@@ -6,6 +6,7 @@
     cyhy_core_install_geoipupdate: "{{ cyhy_archive_install_geoipupdate }}"
     cyhy_core_maxmind_account_id: "{{ cyhy_archive_maxmind_account_id }}"
     cyhy_core_maxmind_license_key: "{{ cyhy_archive_maxmind_license_key }}"
+    cyhy_core_version: "{{ cyhy_archive_cyhy_core_version }}"
 
 - name: Create the /var/cyhy/scripts directory
   ansible.builtin.file:
